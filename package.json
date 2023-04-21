@@ -1,7 +1,25 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.22"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DagimAsnake/courseGoalBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DagimAsnake/courseGoalBackend/issues"
+  },
+  "homepage": "https://github.com/DagimAsnake/courseGoalBackend#readme"
 }

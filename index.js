@@ -1,10 +1,17 @@
+if (process.env.NODE_ENV != 'production') {
+  require('dotenv').config()
+}
+
 const { app, express } = require("./server");
 const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", true);
 
+// const dbUrl = "mongodb://127.0.0.1/courseGoal"
+const dbUrl = process.env.DB_URL
+
 mongoose
-  .connect("mongodb://127.0.0.1/courseGoal", {
+  .connect(dbUrl, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
